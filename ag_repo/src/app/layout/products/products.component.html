@@ -1,1 +1,23 @@
-<p>products works!</p>
+<div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="productName">Product Name</label>
+        <input type="text" class="form-control" id="productName">
+      </div>
+      <div class="form-group">
+        <label for="productDescription">Product Description</label>
+        <textarea class="form-control" id="productDescription" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="productCost">Cost (USD)</label>
+        <input type="number" step="0.01" class="form-control" id="productCost">
+      </div>
+      <div class="form-group">
+        <label for="productImage">Product Image</label>
+        <input type="file" class="form-control-file" id="productImage">
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-success">Save Product</button>
