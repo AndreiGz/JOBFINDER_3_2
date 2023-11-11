@@ -1,12 +1,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Job Finder User Dashboard</title>
+    <title>Job Finder Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
-
     <div class="container mt-4">
         <div class="row">
             <div class="col-md-3">
@@ -41,11 +40,10 @@
                 <div class="form-group">
                     <label for="experienceLevel">Experience Level:</label>
                     <select class="form-control" id="experienceLevel">
-                        <option value="entryLevel">Student Level</option>
-                        <option value="entryLevel">Intern Level</option>
                         <option value="entryLevel">Entry Level</option>
                         <option value="midLevel">Mid Level</option>
                         <option value="seniorLevel">Senior Level</option>
+                        <!-- Add more experience levels as needed -->
                     </select>
                 </div>
 
@@ -56,7 +54,6 @@
                         <option value="no">No</option>
                     </select>
                 </div>
-
                 <button class="btn btn-primary">Apply Filters</button>
             </div>
 
@@ -72,6 +69,8 @@
                                     <p class="card-text">We are looking for a talented software engineer to join our
                                         team. The ideal candidate will have experience in...</p>
                                     <p class="card-text"><strong>Salary:</strong> $80,000 - $100,000 per year</p>
+                                    <span class="badge badge-primary tag tag-remote">Remote</span>
+                                    <span class="badge badge-success tag tag-fulltime">Full Time</span>
                                     <button class="btn btn-primary btn-apply">Apply Now</button>
                                     <button class="btn btn-secondary btn-more-info">More Info</button>
                                 </div>
@@ -86,6 +85,7 @@
                                     <p class="card-text">Join our marketing team and help us promote our products. The
                                         ideal candidate will have a strong background in...</p>
                                     <p class="card-text"><strong>Salary:</strong> $60,000 - $80,000 per year</p>
+                                    <span class="badge badge-primary tag tag-fulltime">Full Time</span>
                                     <button class="btn btn-primary btn-apply">Apply Now</button>
                                     <button class="btn btn-secondary btn-more-info">More Info</button>
                                 </div>
@@ -100,6 +100,8 @@
                                     <p class="card-text">We are seeking a financial analyst to support our financial
                                         planning. The ideal candidate will be responsible for...</p>
                                     <p class="card-text"><strong>Salary:</strong> $70,000 - $90,000 per year</p>
+                                    <span class="badge badge-primary tag tag-remote">Remote</span>
+                                    <span class="badge badge-success tag tag-fulltime">Full Time</span>
                                     <button class="btn btn-primary btn-apply">Apply Now</button>
                                     <button class="btn btn-secondary btn-more-info">More Info</button>
                                 </div>
@@ -114,6 +116,8 @@
                                     <p class="card-text">Join our design team to create user-friendly and visually
                                         appealing interfaces. The ideal candidate will have a strong portfolio...</p>
                                     <p class="card-text"><strong>Salary:</strong> $75,000 - $95,000 per year</p>
+                                    <span class="badge badge-primary tag tag-student">Student Level</span>
+                                    <span class="badge badge-success tag tag-remote">Remote</span>
                                     <button class="btn btn-primary btn-apply">Apply Now</button>
                                     <button class="btn btn-secondary btn-more-info">More Info</button>
                                 </div>
@@ -128,6 +132,7 @@
                                     <p class="card-text">We are expanding our sales team and looking for motivated
                                         individuals. The ideal candidate will have a proven track record in...</p>
                                     <p class="card-text"><strong>Salary:</strong> $50,000 - $70,000 per year</p>
+                                    <span class="badge badge-primary tag tag-fulltime">Full Time</span>
                                     <button class="btn btn-primary btn-apply">Apply Now</button>
                                     <button class="btn btn-secondary btn-more-info">More Info</button>
                                 </div>
@@ -142,6 +147,7 @@
                                     <p class="card-text">Explore and analyze data to provide valuable insights for our
                                         business. The ideal candidate will have a strong background in...</p>
                                     <p class="card-text"><strong>Salary:</strong> $90,000 - $110,000 per year</p>
+                                    <span class="badge badge-primary tag tag-remote">Remote</span>
                                     <button class="btn btn-primary btn-apply">Apply Now</button>
                                     <button class="btn btn-secondary btn-more-info">More Info</button>
                                 </div>
@@ -151,7 +157,7 @@
                 </div>
 
                 <h2>Recommended Jobs</h2>
-                <div class="recommended-jobs-container">
+                <div class="recommended-container">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card recommended-card">
@@ -161,6 +167,7 @@
                                     <p class="card-text">Lead product development and strategy for innovative
                                         solutions. The ideal candidate will have proven experience in...</p>
                                     <p class="card-text"><strong>Salary:</strong> $100,000 - $120,000 per year</p>
+                                    <span class="badge badge-primary tag tag-fulltime">Full Time</span>
                                     <button class="btn btn-primary btn-apply">Apply Now</button>
                                     <button class="btn btn-secondary btn-more-info">More Info</button>
                                 </div>
@@ -176,6 +183,7 @@
                                         clients. The ideal candidate will have excellent communication
                                         skills...</p>
                                     <p class="card-text"><strong>Salary:</strong> $80,000 - $100,000 per year</p>
+                                    <span class="badge badge-primary tag tag-remote">Remote</span>
                                     <button class="btn btn-primary btn-apply">Apply Now</button>
                                     <button class="btn btn-secondary btn-more-info">More Info</button>
                                 </div>
@@ -191,6 +199,7 @@
                                         projects. The ideal candidate will have a strong portfolio of creative
                                         work...</p>
                                     <p class="card-text"><strong>Salary:</strong> $70,000 - $90,000 per year</p>
+                                    <span class="badge badge-primary tag tag-student">Student Level</span>
                                     <button class="btn btn-primary btn-apply">Apply Now</button>
                                     <button class="btn btn-secondary btn-more-info">More Info</button>
                                 </div>
@@ -199,10 +208,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>

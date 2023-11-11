@@ -1,5 +1,5 @@
 .job-container,
-        .recommended-jobs-container {
+        .recommended-container {
             border: 1px solid #dee2e6;
             margin-bottom: 20px;
             padding: 15px;
@@ -25,4 +25,24 @@
         .recommended-card .btn-more-info {
             width: 100%;
             margin-top: 10px;
+        }
+
+        .tag {
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .tag-remote {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .tag-fulltime {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        .tag-student {
+            background-color: #ffc107;
+            color: #212529;
         }
