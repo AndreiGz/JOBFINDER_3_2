@@ -1,0 +1,28 @@
+.job-container,
+        .recommended-jobs-container {
+            border: 1px solid #dee2e6;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .job-card,
+        .recommended-card {
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .job-card .card-body,
+        .recommended-card .card-body {
+            background-color: #ffffff;
+        }
+
+        .job-card .btn-apply,
+        .recommended-card .btn-apply,
+        .job-card .btn-more-info,
+        .recommended-card .btn-more-info {
+            width: 100%;
+            margin-top: 10px;
+        }

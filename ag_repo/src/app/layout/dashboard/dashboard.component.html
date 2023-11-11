@@ -1,0 +1,208 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Job Finder User Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <h2>Filters</h2>
+
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" class="form-control" id="location" placeholder="Enter location">
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select class="form-control" id="category">
+                        <option value="1">Software Development</option>
+                        <option value="2">Marketing</option>
+                        <option value="3">Finance</option>
+                        <option value="3">Designing</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="jobType">Job Type:</label>
+                    <select class="form-control" id="jobType">
+                        <option value="fullTime">Full Time</option>
+                        <option value="partTime">Part Time</option>
+                        <option value="contract">Contract</option>
+                        <option value="contract">Internship</option>
+                        <option value="contract">On the Job Training</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="experienceLevel">Experience Level:</label>
+                    <select class="form-control" id="experienceLevel">
+                        <option value="entryLevel">Student Level</option>
+                        <option value="entryLevel">Intern Level</option>
+                        <option value="entryLevel">Entry Level</option>
+                        <option value="midLevel">Mid Level</option>
+                        <option value="seniorLevel">Senior Level</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="remoteWork">Remote Work:</label>
+                    <select class="form-control" id="remoteWork">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-primary">Apply Filters</button>
+            </div>
+
+            <div class="col-md-9">
+                <h2>Job Listings</h2>
+                <div class="job-container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card job-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Software Engineer</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Company XYZ</h6>
+                                    <p class="card-text">We are looking for a talented software engineer to join our
+                                        team. The ideal candidate will have experience in...</p>
+                                    <p class="card-text"><strong>Salary:</strong> $80,000 - $100,000 per year</p>
+                                    <button class="btn btn-primary btn-apply">Apply Now</button>
+                                    <button class="btn btn-secondary btn-more-info">More Info</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card job-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Marketing Specialist</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Company ABC</h6>
+                                    <p class="card-text">Join our marketing team and help us promote our products. The
+                                        ideal candidate will have a strong background in...</p>
+                                    <p class="card-text"><strong>Salary:</strong> $60,000 - $80,000 per year</p>
+                                    <button class="btn btn-primary btn-apply">Apply Now</button>
+                                    <button class="btn btn-secondary btn-more-info">More Info</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card job-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Financial Analyst</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Company 123</h6>
+                                    <p class="card-text">We are seeking a financial analyst to support our financial
+                                        planning. The ideal candidate will be responsible for...</p>
+                                    <p class="card-text"><strong>Salary:</strong> $70,000 - $90,000 per year</p>
+                                    <button class="btn btn-primary btn-apply">Apply Now</button>
+                                    <button class="btn btn-secondary btn-more-info">More Info</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card job-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">UX Designer</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Creative Designs Inc.</h6>
+                                    <p class="card-text">Join our design team to create user-friendly and visually
+                                        appealing interfaces. The ideal candidate will have a strong portfolio...</p>
+                                    <p class="card-text"><strong>Salary:</strong> $75,000 - $95,000 per year</p>
+                                    <button class="btn btn-primary btn-apply">Apply Now</button>
+                                    <button class="btn btn-secondary btn-more-info">More Info</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card job-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sales Representative</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Sales Pro Co.</h6>
+                                    <p class="card-text">We are expanding our sales team and looking for motivated
+                                        individuals. The ideal candidate will have a proven track record in...</p>
+                                    <p class="card-text"><strong>Salary:</strong> $50,000 - $70,000 per year</p>
+                                    <button class="btn btn-primary btn-apply">Apply Now</button>
+                                    <button class="btn btn-secondary btn-more-info">More Info</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card job-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Data Scientist</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Data Insights Corp.</h6>
+                                    <p class="card-text">Explore and analyze data to provide valuable insights for our
+                                        business. The ideal candidate will have a strong background in...</p>
+                                    <p class="card-text"><strong>Salary:</strong> $90,000 - $110,000 per year</p>
+                                    <button class="btn btn-primary btn-apply">Apply Now</button>
+                                    <button class="btn btn-secondary btn-more-info">More Info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Recommended Jobs</h2>
+                <div class="recommended-jobs-container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card recommended-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product Manager</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Product Innovations Ltd.</h6>
+                                    <p class="card-text">Lead product development and strategy for innovative
+                                        solutions. The ideal candidate will have proven experience in...</p>
+                                    <p class="card-text"><strong>Salary:</strong> $100,000 - $120,000 per year</p>
+                                    <button class="btn btn-primary btn-apply">Apply Now</button>
+                                    <button class="btn btn-secondary btn-more-info">More Info</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card recommended-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Customer Success Specialist</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Customer Delight Co.</h6>
+                                    <p class="card-text">Ensure customer satisfaction and build strong relationships with
+                                        clients. The ideal candidate will have excellent communication
+                                        skills...</p>
+                                    <p class="card-text"><strong>Salary:</strong> $80,000 - $100,000 per year</p>
+                                    <button class="btn btn-primary btn-apply">Apply Now</button>
+                                    <button class="btn btn-secondary btn-more-info">More Info</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card recommended-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Graphic Designer</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Visual Creations Studio</h6>
+                                    <p class="card-text">Create visually stunning graphics and designs for various
+                                        projects. The ideal candidate will have a strong portfolio of creative
+                                        work...</p>
+                                    <p class="card-text"><strong>Salary:</strong> $70,000 - $90,000 per year</p>
+                                    <button class="btn btn-primary btn-apply">Apply Now</button>
+                                    <button class="btn btn-secondary btn-more-info">More Info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
