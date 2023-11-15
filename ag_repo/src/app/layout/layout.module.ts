@@ -6,6 +6,7 @@ import { TopnavComponent } from '../components/topnav/topnav.component';
 import { SidenavComponent } from '../components/sidenav/sidenav.component';
 import { ScreenComponent } from '../components/screen/screen.component';
 import { RouterModule } from '@angular/router';
+import { AdminComponent } from './admin/admin.component';
 
 
 
@@ -14,7 +15,8 @@ import { RouterModule } from '@angular/router';
     LayoutComponent,
     TopnavComponent,
     SidenavComponent,
-    ScreenComponent
+    ScreenComponent,
+    AdminComponent
   ],
   imports: [
     CommonModule,
