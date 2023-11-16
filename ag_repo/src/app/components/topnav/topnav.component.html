@@ -25,9 +25,12 @@ rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAs
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="login">User</a>
         </li>
+        <!-- modals na need ayusin -->
+
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#productModal">
-          Add Job
+          Add Product
         </button>
+
           <li>
           <button type="button" class="btn btn-danger">Near you!</button>
         </li>
@@ -41,4 +44,42 @@ rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAs
     </div>
   </nav>
 
- 
+ <!-- Modals na need natin ayusin -->
+
+  <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productModalLabel">Add Product</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="productName">Product Name</label>
+              <input type="text" class="form-control" id="productName">
+            </div>
+            <div class="form-group">
+              <label for="productDescription">Product Description</label>
+              <textarea class="form-control" id="productDescription" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="productCost">Cost (USD)</label>
+              <input type="number" step="0.01" class="form-control" id="productCost">
+            </div>
+            <div class="form-group">
+              <label for="productImage">Product Image</label>
+              <input type="file" class="form-control-file" id="productImage">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Save Product</button>
+        </div>
+      </div>
+    </div>
+  </div>

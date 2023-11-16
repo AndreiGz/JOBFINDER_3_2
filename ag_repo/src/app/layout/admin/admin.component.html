@@ -1,39 +1,52 @@
-<div class="container-fluid">
-    <div class="row">
-      <!-- Sidebar -->
-      <nav class="col-md-2 d-none d-md-block sidebar">
-        <div class="sidebar-sticky">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">
-                Dashboard
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Jobs
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Users
-              </a>
-            </li>
-            <!-- Add more sidebar items as needed -->
-          </ul>
-        </div>
-      </nav>
-  
-      <!-- Main content -->
-      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-        <div class="content">
-          <h2>Dashboard</h2>
-          <!-- Add your dashboard content here -->
-        </div>
-      </main>
-    </div>
-  </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Admin Dashboard - Job Finder</title>
+</head>
+<body>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<div class="container mt-5">
+  <h2 class="mb-4">Admin Dashboard - Job Finder</h2>
+
+  <table class="table table-bordered">
+      <thead>
+          <tr>
+              <th>Email</th>
+              <th>Password</th>
+              <th>Username</th>
+              <th>Gender</th>
+              <th>Job Category</th>
+              <th>Valid ID</th>
+              <th>BIR</th>
+          </tr>
+      </thead>
+      <tbody>
+          <!-- Replace the following rows with data from your database -->
+          <tr>
+              <td>admin@example.com</td>
+              <td>********</td>
+              <td>admin_user</td>
+              <td>Male</td>
+              <td>IT</td>
+              <td>
+                  <!-- Example link to view attached files; replace with actual links or buttons -->
+                  <a href="/file-viewer?id=1">Valid ID</a>
+              </td>
+              <td>
+                <!-- Example link to view attached files; replace with actual links or buttons -->
+                <a href="/file-viewer?id=1">BIR</a>
+            </td>
+          </tr>
+          
+          <!-- Add more rows as needed -->
+      </tbody>
+  </table>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>

@@ -51,8 +51,74 @@
                         <label class="form-label" for="form3Example4cd">Repeat your password</label>
                       </div>
                     </div>
-  
-                    <div class="form-check d-flex justify-content-center mb-5">
+                    
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-venus-mars fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" class="form-select">
+                          <option value="" disabled selected>Select your gender</option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                          <option value="other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-venus-mars fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <label for="gender">Job Category:</label>
+                        <select id="gender" name="gender" class="form-select">
+                          <option value="" disabled selected>Select your category</option>
+                          <option value="male">Find a Job</option>
+                          <option value="female">Be a Employer</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="container mt-5">
+                      <div class="row justify-content-center">
+                          <div class="col-md-6">
+                              <div class="card">
+                                  <div class="card-header">
+                                      <h4 class="text-center">Valid ID:</h4>
+                                  </div>
+                                  <div class="card-body">
+                                      <form enctype="multipart/form-data" method="post" action="/your-upload-endpoint">
+                                          <div class="form-group">
+                                              <label for="file">Choose a file:</label>
+                                              <input type="file" class="form-control-file" id="file" name="file" accept=".png, .jpeg">
+                                          </div>
+                                          <button type="submit" class="btn btn-primary btn-block">Upload File</button>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <br> <br>
+                  <div class="container mt-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="text-center">BIR Certificate:</h4>
+                                </div>
+                                <div class="card-body">
+                                    <form enctype="multipart/form-data" method="post" action="/your-upload-endpoint">
+                                        <div class="form-group">
+                                            <label for="file">Choose a file:</label>
+                                            <input type="file" class="form-control-file" id="file" name="file" accept=".docx, .">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-block">Upload File</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="form-check d-flex justify-content-side mb-5">
                       <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
                       <label class="form-check-label" for="form2Example3">
                         I agree all statements in <a href="#!">Terms of service</a>
@@ -70,7 +136,8 @@
   
                   <img src="https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2016/06/11132525/Full-time-job-1024x512.png"
                     class="img-fluid" alt="Sample image">
-  
+                  
+                    
                 </div>
               </div>
             </div>

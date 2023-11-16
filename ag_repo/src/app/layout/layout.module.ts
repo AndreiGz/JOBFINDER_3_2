@@ -7,6 +7,7 @@ import { SidenavComponent } from '../components/sidenav/sidenav.component';
 import { ScreenComponent } from '../components/screen/screen.component';
 import { RouterModule } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
 
 
 
@@ -16,7 +17,8 @@ import { AdminComponent } from './admin/admin.component';
     TopnavComponent,
     SidenavComponent,
     ScreenComponent,
-    AdminComponent
+    AdminComponent,
+    AdminloginComponent
   ],
   imports: [
     CommonModule,
