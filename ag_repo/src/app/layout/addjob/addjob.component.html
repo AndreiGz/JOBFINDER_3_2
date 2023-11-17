@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Job Management Application</title>
+</head>
+<body>
+
+<div class="container mt-4">
+  <h2>Job Management</h2>
+
+  <!-- Job List -->
+  <div class="card">
+    <div class="card-header">
+      Current Jobs
+    </div>
+    <ul class="list-group list-group-flush" id="jobList">
+      <!-- Jobs will be dynamically added here -->
+    </ul>
+  </div>
+
+  <!-- Add Job Form -->
+  <div class="card mt-4">
+    <div class="card-header">
+      Add New Job
+    </div>
+    <div class="card-body">
+      <form id="addJobForm">
+        <div class="form-group">
+          <label for="jobTitle">Job Title:</label>
+          <input type="text" class="form-control" id="jobTitle" required>
+        </div>
+        <div class="form-group">
+          <label for="jobDescription">Job Description:</label>
+          <textarea class="form-control" id="jobDescription" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Job</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+  // JavaScript code to handle form submission and job addition
+  document.getElementById('addJobForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var jobTitle = document.getElementById('jobTitle').value;
+    var jobDescription = document.getElementById('jobDescription').value;
+
+    // Create a new list item for the job
+    var listItem = document.createElement('li');
+    listItem.className = 'list-group-item';
+    listItem.innerHTML = '<strong>' + jobTitle + '</strong>: ' + jobDescription;
+
+    // Append the new job to the job list
+    document.getElementById('jobList').appendChild(listItem);
+
+    // Clear the form fields
+    document.getElementById('jobTitle').value = '';
+    document.getElementById('jobDescription').value = '';
+  });
+</script>
+
+</body>
+</html>

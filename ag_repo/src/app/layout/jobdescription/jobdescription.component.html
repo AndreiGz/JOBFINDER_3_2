@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Job Description</title>
+</head>
+<body>
+
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Job Title: Software Developer</h2>
+      <p class="card-text">
+        We are looking for a skilled software developer to join our dynamic team. The ideal candidate will have experience
+        in developing web applications, a strong understanding of software architecture, and excellent problem-solving skills.
+      </p>
+
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Location: Anytown, USA</li>
+        <li class="list-group-item">Salary: Competitive</li>
+        <li class="list-group-item">Contact Number: (123) 456-7890</li>
+      </ul>
+
+      <!-- Apply Now Form -->
+      <form class="mt-4">
+        <div class="form-group">
+          <label for="applicantName">Your Name:</label>
+          <input type="text" class="form-control" id="applicantName" required>
+        </div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#applyModal">Apply Now</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Apply Modal -->
+<div class="modal fade" id="applyModal" tabindex="-1" role="dialog" aria-labelledby="applyModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="applyModalLabel">Apply for Software Developer Position</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Thank you for applying, <span id="applicantNameDisplay"></span>! Your application has been submitted.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+  // JavaScript code to display applicant's name in the modal
+  document.querySelector('#applyModal').addEventListener('show.bs.modal', function (event) {
+    var applicantName = document.getElementById('applicantName').value;
+    document.getElementById('applicantNameDisplay').textContent = applicantName;
+  });
+</script>
+
+</body>
+</html>

@@ -8,6 +8,11 @@ import { ScreenComponent } from '../components/screen/screen.component';
 import { RouterModule } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { JobdescriptionComponent } from './jobdescription/jobdescription.component';
+import { AddjobComponent } from './addjob/addjob.component';
+import { ProfileadminComponent } from './profileadmin/profileadmin.component';
+import { ProfileuserComponent } from './profileuser/profileuser.component';
+import { ProfileemployerComponent } from './profileemployer/profileemployer.component';
 
 
 
@@ -18,7 +23,12 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
     SidenavComponent,
     ScreenComponent,
     AdminComponent,
-    AdminloginComponent
+    AdminloginComponent,
+    JobdescriptionComponent,
+    AddjobComponent,
+    ProfileadminComponent,
+    ProfileuserComponent,
+    ProfileemployerComponent
   ],
   imports: [
     CommonModule,
